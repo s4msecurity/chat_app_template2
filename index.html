@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Chat App
+    </title>
+    <link rel="stylesheet" href="styleLib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleLib/sideStyle.css">
+    <link rel="stylesheet" href="styleLib/chatList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="styleLib/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <div>
+                Hiyerogram
+            </div>
+        </div>
+    </nav>
+
+    <!--sidebar kısmı-->
+    <div class="side-bar bg-primary">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <a href="#"><i class="fas fa-desktop"></i> Desktop</a>
+            </div>
+            <div class="item">
+                <a class="sub-btn" href="#"><i class="fas fa-table"></i>
+                    Table<i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Sub İtem 01</a>
+                    <a href="#" class="sub-item">Sub İtem 02</a>
+                    <a href="#" class="sub-item">Sub İtem 03</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#"><i class="fas fa-th"></i> Forms</a>
+            </div>
+            <div class="item">
+                <a class="sub-btn" href="#"><i class="fas fa-cogs"></i> Settings<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Sub İtem 01</a>
+                    <a href="#" class="sub-item">Sub İtem 02</a>
+                    <a href="#" class="sub-item">Sub İtem 03</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            </div>
+        </div>
+    </div>
+    <!--sidebar kısmı-->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="personDiv">
+                <div class="row">
+                    <div class="col bg-primary chatingList">
+                        <!--Search zone -->
+                        <nav class="navbar navbar-light ">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Username/Group"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </form>
+                        </nav>
+                    </div>
+                    <div class="w-100"></div>
+
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col chatingList btn-outline-primary">
+                        <img class="chatProfile"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="chatProfileName">
+                            Rigby
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    
+
+                </div>
+            </div>
+
+            <div class="col chatZone">
+
+                <div class="row chatMessages">
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                                        <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                                        <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                                        <div class="col">
+                        <img class="chatProfileL"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageL">
+                            <p>
+                                Message 1
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <img class="chatProfileR"
+                            src="https://toppng.com/uploads/preview/in-your-face-rigby-regular-show-115630774473eohzbh8u2.png"/>
+                        <div class="cMessageR">
+                            <p>
+                                Message 2
+                            </p>
+                            <P class="cMessageInfo">
+                                01.05.21 | 02:08
+                            </P>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+
+                <!--Message Zone-->
+                <div class="generalForm">
+                    <form method="POST" action="" class="input-group">
+                        <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                        <div class="input-group-append">
+                            <span onclick="document.getElementById('getFile').click()"
+                                class="input-group-text formBtn bg-primary"><i class="fas fa-paperclip"></i></span>
+                            <input id="getFile" type="file" style="display: none;">
+                        </div>
+                        <div class="input-group-append">
+                            <span onclick="document.getElementById('btnSubmit').click()"
+                                class="input-group-text formBtn bg-primary"><i class="fas fa-location-arrow"></i></span>
+                            <input id="btnSubmit" type="submit" style="display: none;" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Sub-menu open/close settings-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            })
+
+            $('.menu-btn').click(function () {
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            })
+
+            $('.close-btn').click(function () {
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            })
+        })
+    </script>
+</body>
+
+</html>

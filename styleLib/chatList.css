@@ -1,0 +1,110 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    font-size: 12px;
+}
+
+/*person list zone left */
+.personDiv {
+    width: 300px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0275d8 white;
+    
+}
+
+.chatingList{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    
+}
+.chatProfile{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: inherit;
+    float: left;
+    margin-right: 15px;
+}
+.chatProfileName{
+    padding: 15px;
+}
+
+
+/* Chatting zone right*/
+.chatZone{
+    height: 100vh;
+    margin: 0px;
+    padding: 5px;
+}
+.chatMessages{
+    max-height: 80%;
+    width: 100%;
+    margin: 0px; 
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0275d8 white;
+}
+
+.chatProfileL{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: inherit;
+    float: left;
+    margin-left: 15px;
+}
+.cMessageL{
+    padding: 15px;
+    float: left;
+}
+
+
+
+.chatProfileR{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: inherit;
+    float: right;
+    margin-right: 15px;
+}
+
+.cMessageR{
+    padding: 15px;
+    float: right;
+}
+
+
+.cMessageInfo{
+    font-size: 8px;
+}
+
+
+
+
+/* Message form */
+.generalForm{
+    position: fixed;  
+    bottom: 0px; 
+    width: 78%;
+    height: auto%;
+}
+.formBtn{
+    color: white;
+    border-radius:5px;
+}
+
+/* mobil view */
+@media (max-width: 750px) {
+    .personDiv{
+        width: 0;
+        background-color: blueviolet;    
+    }
+    .generalForm{
+        width: 100%;
+    }
+}
