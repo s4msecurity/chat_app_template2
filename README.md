@@ -15,7 +15,7 @@ Example of front-end design for chat application #2<br>
 #3<br>
 <img src="https://user-images.githubusercontent.com/81925511/168598730-a39f69fc-0539-4df9-a949-016ac123467f.PNG" width="250" /><br>
 <hr>
-<h4>You can download it and use it easily in your apps and edit it.</h4><br>
+<h4>You can download it and use it easily in your apps and edit it.</h4>
 Used by<br>
 - jQuery 3.6.0<br>
 - Bootstrap<br>
