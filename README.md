@@ -1,9 +1,7 @@
 # chat_app_template2
-<h2>Example of front-end design for chat application #2</h2><br>
-
-<h1>General Screenshots</h1><br>
-
-<h5>Desktop View</h5><br>
+Example of front-end design for chat application #2<br>
+<h1>General Screenshots</h1>
+<h5>Desktop View</h5>
 #1<br>
 <img src="https://user-images.githubusercontent.com/81925511/168598113-8b940bf8-f59b-42bb-abfd-7b211b0c7f0d.PNG" width="650" /><br>
 #2<br>
